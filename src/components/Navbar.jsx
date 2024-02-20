@@ -1,15 +1,16 @@
 import React from 'react'
 import "../styles/Navbar.css"
+import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <div className='nav'>
-        <div className="logo">
+        <Link className="logo link" to="/">
             MultiModal Emotion Recognition system.
-        </div>
+        </Link>
         <div className="links">
-            <a href="#" className="link">Home</a>
-            <a href="#" className="link">About</a>
-            <a href="#" className="link">Contact</a>
+            <Link to="/" className="link">Home</Link>
+            <Link to="/about" className="link">About</Link>
+            <Link onClick={() => window.location = 'mailto:yourmail@domain.com'} className="link">Contact</Link>
         </div>
     </div>
   )

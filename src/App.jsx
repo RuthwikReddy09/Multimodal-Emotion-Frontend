@@ -1,18 +1,23 @@
-import { useState } from 'react'
 import './App.css'
-import AudioRecorder from './components/AudioRecorder'
-import VideoRecorder from './components/VideoRecorder'
 import Navbar from './components/Navbar'
+import Home from './components/Home'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import About from './components/About'
 
 function App() {
 
   return (
-    <div className='Home'>
-      <Navbar/>
-      <VideoRecorder/>
-      <AudioRecorder/>
+    <div className='app'>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+        </Routes>
+      </BrowserRouter>
+
     </div>
-  ) 
+  )
 }
 
 export default App

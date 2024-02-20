@@ -2,5 +2,10 @@
     width: 640px;
     height: 480px;
     border: 2px solid white;
-
+}
+.user-logo{
+    position: relative;
+    bottom: 290px;
+    left: 270px;
+    z-index: -1;
 }
