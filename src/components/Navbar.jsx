@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="links">
             <Link to="/" className="link">Home</Link>
             <Link to="/about" className="link">About</Link>
-            <Link onClick={() => window.location = 'mailto:yourmail@domain.com'} className="link">Contact</Link>
+            <Link onClick={() => window.location = 'mailto:d.ruthwikreddy9@gmail.com'} className="link">Contact</Link>
         </div>
     </div>
   )

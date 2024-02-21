@@ -19,3 +19,9 @@
     align-items: center;
     flex-direction: column;
 }
+.audio-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
